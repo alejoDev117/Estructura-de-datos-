@@ -1,0 +1,17 @@
+# ninja log v5
+9	3533	6835928388128734	CMakeFiles/Pilas.dir/ejercicioPila1.cpp.obj	d64c08b1e5353d92
+0	3549	6835928388198667	CMakeFiles/Pilas.dir/agregarPila.cpp.obj	6f0c6a2cb446b798
+254	7492	6835934513736400	CMakeFiles/Pilas.dir/ejercicioPunteroVector.cpp.obj	3a2c3b934fb7cb84
+777	2607	6835944627236239	build.ninja	680f6ad642b25d88
+11	6491	6835933652395011	CMakeFiles/Pilas.dir/introduccionPunteros.cpp.obj	a72eb141826b31f
+4011	5005	6835943176488478	agregarPila.exe	8a55a29126bc3997
+6	8150	6835933669025897	CMakeFiles/Pilas.dir/ejercicioPila2.cpp.obj	1306a269a160b93a
+2	3937	6835943165784095	CMakeFiles/agregarPila.dir/agregarPila.cpp.obj	6576ef7ce5ead8f
+8	4445	6835944955344063	CMakeFiles/ejercicioPunteroVector.dir/ejercicioPunteroVector.cpp.obj	61378478b6302147
+4512	13962	6835945050466287	ejercicioPunteroVector.exe	87cde1b42e58eae0
+1	35999	6835946171696173	CMakeFiles/ejercicioPila2.dir/ejercicioPila2.cpp.obj	b25155e7039cd3c8
+36001	42608	6835946237915788	ejercicioPila2.exe	7a07d5f356c7c31d
+1	1148	6835947218390519	CMakeFiles/ejercicioPila1.dir/ejercicioPila1.cpp.obj	43d543e1dc0bc868
+1149	1468	6835947221533420	ejercicioPila1.exe	b9ab0e2c20e1bb6b
+20	2045	6835959769835827	CMakeFiles/ejercicioPila2.dir/ejercicioPila2.cpp.obj	b25155e7039cd3c8
+2046	2295	6835959772238256	ejercicioPila2.exe	7a07d5f356c7c31d

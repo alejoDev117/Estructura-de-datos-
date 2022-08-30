@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Colas",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "AgregarACola::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AgregarACola-Debug-b525f9a47a6321144c43.json",
+					"name" : "AgregarACola",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ejercicio1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejercicio1-Debug-a6cbbc97476d100e4987.json",
+					"name" : "ejercicio1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ejercicioCola::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ejercicioCola-Debug-4d832b9fb19a5f4c9310.json",
+					"name" : "ejercicioCola",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug",
+		"source" : "C:/Users/Alejandro/CLionProjects/Colas"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

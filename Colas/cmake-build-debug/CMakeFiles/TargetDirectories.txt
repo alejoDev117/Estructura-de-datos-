@@ -1,0 +1,5 @@
+C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug/CMakeFiles/AgregarACola.dir
+C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug/CMakeFiles/ejercicio1.dir
+C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug/CMakeFiles/ejercicioCola.dir
+C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug/CMakeFiles/rebuild_cache.dir

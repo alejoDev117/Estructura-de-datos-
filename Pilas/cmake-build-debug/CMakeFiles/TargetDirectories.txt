@@ -1,0 +1,7 @@
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/agregarPila.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/ejercicioPila1.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/ejercicioPila2.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/ejercicioPunteroVector.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/introduccionPunteros.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alejandro/CLionProjects/Pilas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
