@@ -1,0 +1,4 @@
+C:/Users/Alejandro/CLionProjects/Parcial/cmake-build-debug/CMakeFiles/ejercicioPilas.dir
+C:/Users/Alejandro/CLionProjects/Parcial/cmake-build-debug/CMakeFiles/ejercicioCola.dir
+C:/Users/Alejandro/CLionProjects/Parcial/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alejandro/CLionProjects/Parcial/cmake-build-debug/CMakeFiles/rebuild_cache.dir

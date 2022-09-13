@@ -1,0 +1,9 @@
+# ninja log v5
+6	827	6847351306213336	CMakeFiles/ejercicioPilas.dir/ejercicioPilas.cpp.obj	ddc67d7ca417b805
+828	988	6847351307745571	ejercicioPilas.exe	60f5a57bcde1291c
+1	1565	6847362869832888	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	613358de1154b844
+1566	2442	6847362878632658	ejercicioCola.exe	20000e4dcf21e07b
+6	837	6847367319302300	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	613358de1154b844
+838	1001	6847367320872580	ejercicioCola.exe	20000e4dcf21e07b
+8	1123	6847370018715794	CMakeFiles/ejercicioPilas.dir/ejercicioPilas.cpp.obj	ddc67d7ca417b805
+1124	1636	6847370023777578	ejercicioPilas.exe	60f5a57bcde1291c
