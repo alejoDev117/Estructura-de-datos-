@@ -28,7 +28,6 @@ void insertarCola(Nodo *&frente,Nodo *&final,int n){
 	Nodo * nuevoNodo = new Nodo();
 	nuevoNodo->dato = n;
 	nuevoNodo->punteroSiguiente = NULL;
-	
 	if(validarColaVacia(frente)){
 		frente = nuevoNodo;
 	}else{

@@ -11,8 +11,7 @@ void agregarPila(Nodo*&,int);
 void quitarPila(Nodo*&,int &);
 int operacionPila(Nodo*&);
 int main(){
-	system("cls");
-	system("color 0B");
+
 	Nodo *puntero = NULL;
 	int decision = 0;
 	while(decision !=6){
@@ -102,4 +101,5 @@ void quitarPila(Nodo *&puntero, int &n){
 
 int operacionPila(Nodo *&puntero){
 	return puntero->facturaPagada;
+
 }

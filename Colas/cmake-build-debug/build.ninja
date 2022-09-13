@@ -139,6 +139,39 @@ build ejercicioCola.exe: CXX_EXECUTABLE_LINKER__ejercicioCola_Debug CMakeFiles/e
   TARGET_IMPLIB = libejercicioCola.dll.a
   TARGET_PDB = ejercicioCola.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sumprimirCola
+
+
+#############################################
+# Order-only phony target for sumprimirCola
+
+build cmake_object_order_depends_target_sumprimirCola: phony || CMakeFiles/sumprimirCola.dir
+
+build CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj: CXX_COMPILER__sumprimirCola_Debug C$:/Users/Alejandro/CLionProjects/Colas/sumprimirCola.cpp || cmake_object_order_depends_target_sumprimirCola
+  DEP_FILE = CMakeFiles\sumprimirCola.dir\sumprimirCola.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\sumprimirCola.dir
+  OBJECT_FILE_DIR = CMakeFiles\sumprimirCola.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sumprimirCola
+
+
+#############################################
+# Link the executable sumprimirCola.exe
+
+build sumprimirCola.exe: CXX_EXECUTABLE_LINKER__sumprimirCola_Debug CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\sumprimirCola.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = sumprimirCola.exe
+  TARGET_IMPLIB = libsumprimirCola.dll.a
+  TARGET_PDB = sumprimirCola.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build ejercicio1: phony ejercicio1.exe
 
 build ejercicioCola: phony ejercicioCola.exe
 
+build sumprimirCola: phony sumprimirCola.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build ejercicioCola: phony ejercicioCola.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Colas/cmake-build-debug
 
-build all: phony AgregarACola.exe ejercicio1.exe ejercicioCola.exe
+build all: phony AgregarACola.exe ejercicio1.exe ejercicioCola.exe sumprimirCola.exe
 
 # =============================================================================
 # Built-in targets

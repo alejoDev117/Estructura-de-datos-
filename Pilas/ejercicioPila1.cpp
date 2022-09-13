@@ -3,77 +3,57 @@
 
 using namespace std;
 
-struct NodoMinuscula{
+struct Nodo{
     string pais;
-    NodoMinuscula *siguiente;
-};
-struct NodoMayuscula{
-    string paisMayus;
-    NodoMayuscula *next;
+    Nodo *siguiente;
 };
 
-void agregarPila(NodoMinuscula *&, string);
-string mostrarPila(NodoMinuscula *&);
-void agregarPilaMayus(NodoMayuscula *&, string);
-void mostrarPilaMayus(NodoMayuscula *&);
+
+void agregarPila(Nodo *&, string);
+string mostrarPila(Nodo *&);
 string mayuscula(string);
 
 int main(){
-    system("cls");
-    system("color 0A");
-    NodoMinuscula *puntero = NULL;
+    Nodo *punteroMinuscula = NULL;
     string nombrePais,paisM;
     string decision = "si";
 
     while(decision == "si" || decision == "Si"){
         cout<<"Ingrese nombre del pais\n";
         cin>>nombrePais;
-        agregarPila(puntero,nombrePais);
+        agregarPila(punteroMinuscula,nombrePais);
         cout<<"Desea ingresar otro nombre?(si,no)\n";
         cin>>decision;
     }
 
-    NodoMayuscula *punteroMayus = NULL;
-    while(puntero != NULL){
-        paisM = mostrarPila(puntero);
+    Nodo *punteroMayuscula = NULL;
+    while(punteroMinuscula != NULL){
+        paisM = mostrarPila(punteroMinuscula);
         paisM = mayuscula(paisM);
-        agregarPilaMayus(punteroMayus,paisM);
-        puntero = puntero->siguiente;
+        agregarPila(punteroMayuscula , paisM);
+        punteroMinuscula = punteroMinuscula->siguiente;
     }
     cout<<"\n-------------Pila2 con mayusculas---------------\n";
-    while(punteroMayus != NULL){
-        mostrarPilaMayus(punteroMayus);
+    while(punteroMayuscula != NULL){
+        mostrarPila(punteroMayuscula);
+        punteroMayuscula = punteroMayuscula->siguiente;
     }
 
     return 0;
 }
 
-void agregarPila(NodoMinuscula *&puntero, string nombre){
-    NodoMinuscula *nuevoNodo = new NodoMinuscula();
+void agregarPila(Nodo *&puntero, string nombre){
+    Nodo *nuevoNodo = new Nodo();
     nuevoNodo->pais = nombre;
     nuevoNodo->siguiente = puntero;
     puntero = nuevoNodo;
 
 }
 
-string mostrarPila(NodoMinuscula *&puntero){//aprovech� la funcion mostrar para sacar de una vez el pais
+string mostrarPila(Nodo *&puntero){//aprovech� la funcion mostrar para sacar de una vez el pais
     cout<<"El pais :"<<puntero->pais<<"\n\t|\n\tY\n";
     return puntero->pais;
 }
-
-void agregarPilaMayus(NodoMayuscula*&puntero, string nombre){// es para el nodo en mayusculas
-    NodoMayuscula *nuevoNodo = new NodoMayuscula();
-    nuevoNodo->paisMayus = nombre;
-    nuevoNodo->next = puntero;
-    puntero = nuevoNodo;
-
-}
-
-void mostrarPilaMayus(NodoMayuscula *&puntero){// es para el nodo en mayusculas
-    cout<<"El pais :"<<puntero->paisMayus<<"\n\t|\n\tY\n";
-    puntero = puntero->next;
-}
-
 
 string mayuscula(string pais){
     for(int i = 0 ; i<pais.length(); i++){

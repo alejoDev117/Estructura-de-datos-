@@ -1,9 +1,13 @@
 # ninja log v5
-1	1306	6835949018074618	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	1afd236486e1f0b3
-1311	1483	6835949019787075	ejercicioCola.exe	20000e4dcf21e07b
-9	2336	6835950858653424	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	1afd236486e1f0b3
-2337	5603	6835950891241444	ejercicioCola.exe	20000e4dcf21e07b
-8	826	6835951648088878	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	1afd236486e1f0b3
-827	1004	6835951649746382	ejercicioCola.exe	20000e4dcf21e07b
 7	2105	6835958639171133	CMakeFiles/ejercicioCola.dir/ejercicioCola.cpp.obj	1afd236486e1f0b3
 2106	3067	6835958648710528	ejercicioCola.exe	20000e4dcf21e07b
+12	1954	6837421032504845	CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj	99f37599a331bfd4
+1955	3223	6837421045138035	sumprimirCola.exe	56f764e82bf3620a
+7	882	6837421335266199	CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj	99f37599a331bfd4
+883	1061	6837421336995418	sumprimirCola.exe	56f764e82bf3620a
+67	1612	6841278579993228	CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj	99f37599a331bfd4
+1613	2392	6841278587747525	sumprimirCola.exe	56f764e82bf3620a
+7	904	6841279186768877	CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj	99f37599a331bfd4
+905	1088	6841279188546320	sumprimirCola.exe	56f764e82bf3620a
+9	747	6846205342180266	CMakeFiles/sumprimirCola.dir/sumprimirCola.cpp.obj	99f37599a331bfd4
+748	926	6846205343889170	sumprimirCola.exe	56f764e82bf3620a

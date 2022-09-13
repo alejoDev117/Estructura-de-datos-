@@ -3,11 +3,7 @@
 using namespace std;
 
 int main(){
-	
-	system("cls");
-	system("color 0A");
-	
-	
+
 	
 	int numeros[10];
 	int *puntero;

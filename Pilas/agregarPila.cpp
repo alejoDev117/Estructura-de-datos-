@@ -12,10 +12,6 @@ void sacarPila(Nodo *&pila , int&);
 void mostrarPila(Nodo *&);
 int main(){
 
-    system("cls");
-    system("color 0A");
-
-
     Nodo *pila = NULL;
     Nodo *pilaMostrar;
     int n1;
