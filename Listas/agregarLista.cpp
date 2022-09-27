@@ -8,10 +8,10 @@ struct Nodo{
 };
 
 void agregarLista(Nodo *&, int);
+void mostrarLista(Nodo *&);
 
 int main(){
     Nodo *lista = NULL;
-
     return 0;
 }
 
@@ -30,4 +30,9 @@ void agregarLista(Nodo *&lista, int dato){
         aux2->siguiente = nuevoNodo;
     }
     nuevoNodo->siguiente = aux1;
+}
+
+void mostrarLista(Nodo *&lista){
+    cout<<"Dato: "<<lista->dato;
+    lista = lista->siguiente;
 }
