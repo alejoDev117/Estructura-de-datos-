@@ -73,6 +73,39 @@ build agregarLista.exe: CXX_EXECUTABLE_LINKER__agregarLista_Debug CMakeFiles/agr
   TARGET_IMPLIB = libagregarLista.dll.a
   TARGET_PDB = agregarLista.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target menuInteractivo
+
+
+#############################################
+# Order-only phony target for menuInteractivo
+
+build cmake_object_order_depends_target_menuInteractivo: phony || CMakeFiles/menuInteractivo.dir
+
+build CMakeFiles/menuInteractivo.dir/menuInteractivo.cpp.obj: CXX_COMPILER__menuInteractivo_Debug C$:/Users/Alejandro/CLionProjects/Listas/menuInteractivo.cpp || cmake_object_order_depends_target_menuInteractivo
+  DEP_FILE = CMakeFiles\menuInteractivo.dir\menuInteractivo.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\menuInteractivo.dir
+  OBJECT_FILE_DIR = CMakeFiles\menuInteractivo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target menuInteractivo
+
+
+#############################################
+# Link the executable menuInteractivo.exe
+
+build menuInteractivo.exe: CXX_EXECUTABLE_LINKER__menuInteractivo_Debug CMakeFiles/menuInteractivo.dir/menuInteractivo.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\menuInteractivo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = menuInteractivo.exe
+  TARGET_IMPLIB = libmenuInteractivo.dll.a
+  TARGET_PDB = menuInteractivo.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build agregarLista: phony agregarLista.exe
 
+build menuInteractivo: phony menuInteractivo.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build agregarLista: phony agregarLista.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug
 
-build all: phony agregarLista.exe
+build all: phony agregarLista.exe menuInteractivo.exe
 
 # =============================================================================
 # Built-in targets

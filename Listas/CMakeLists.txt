@@ -4,3 +4,4 @@ project(Listas)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(agregarLista agregarLista.cpp)
+add_executable(menuInteractivo menuInteractivo.cpp)
