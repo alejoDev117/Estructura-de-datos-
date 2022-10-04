@@ -5,3 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(agregarLista agregarLista.cpp)
 add_executable(menuInteractivo menuInteractivo.cpp)
+add_executable(practica practica.cpp)
+add_executable(practicaFinal practicaFinal.cpp)
