@@ -1,4 +1,5 @@
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/agregarLista.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/menuInteractivo.dir
+C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/practica.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/rebuild_cache.dir

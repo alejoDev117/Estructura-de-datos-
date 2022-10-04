@@ -9,6 +9,8 @@ struct Nodo{
 
 void agregarLista(Nodo *&, int);
 void mostrarLista(Nodo *&);
+bool buscarDato(Nodo *&, int);
+void popLista(Nodo *&, int);
 
 int main(){
     Nodo *lista = NULL;
@@ -35,4 +37,42 @@ void agregarLista(Nodo *&lista, int dato){
 void mostrarLista(Nodo *&lista){
     cout<<"Dato: "<<lista->dato;
     lista = lista->siguiente;
+}
+bool buscarDato(Nodo *&lista, int n){
+    while(lista !=NULL){
+        if(lista->dato == n){
+            return true;
+        }
+        lista = lista->siguiente;
+    }
+    return false;
+}
+
+void popLista(Nodo *&lista, int dato){
+    if(lista != NULL){
+        Nodo *auxBorrar;
+        Nodo *anterior = NULL;
+        auxBorrar = lista;
+        while(auxBorrar != NULL && auxBorrar->dato != dato){
+            anterior = auxBorrar;
+            auxBorrar = auxBorrar->siguiente;
+        }
+        if(auxBorrar == NULL){
+            cout<<"No existe en la lista\n";
+        }
+        if(anterior == NULL){// esto quiere decir que el elemento a eliminar es el primero
+            lista = lista->siguiente;
+            delete auxBorrar;
+        }else{
+            anterior->siguiente = auxBorrar->siguiente;
+            delete auxBorrar;
+        }
+    }
+}
+
+void eliminarListaCompleta(Nodo *&lista, int &n){
+    Nodo *aux = lista;
+    n = aux->dato;
+    lista = aux->siguiente;
+    delete aux;
 }
