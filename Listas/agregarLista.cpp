@@ -38,15 +38,7 @@ void mostrarLista(Nodo *&lista){
     cout<<"Dato: "<<lista->dato;
     lista = lista->siguiente;
 }
-bool buscarDato(Nodo *&lista, int n){
-    while(lista !=NULL){
-        if(lista->dato == n){
-            return true;
-        }
-        lista = lista->siguiente;
-    }
-    return false;
-}
+
 
 void popLista(Nodo *&lista, int dato){
     if(lista != NULL){

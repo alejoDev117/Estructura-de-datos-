@@ -13,9 +13,11 @@ void agregarLista(Nodo *&, int);
 void mostrarLista(Nodo *&);
 bool buscarDato(Nodo *&lista, int n);
 void eliminarListaCompleta(Nodo *&, int&);
+void popLista(Nodo *&, int);
+
 int main(){
     Nodo *lista = NULL;
-    string menu = "\nMenu de Opciones\n1.agregar A lista\n2.Mostrar Lista\n3.Buscar dato\n4.Eliminarlista\n5.Salir\nR?->";
+    string menu = "\nMenu de Opciones\n1.agregar A lista\n2.Mostrar Lista\n3.Buscar dato\n4.Eliminarlista\n5.Eliminar Elemento\n6.salir\nR?->";
     int decision;
     bool seguir = true;
     while(seguir){
@@ -53,6 +55,13 @@ int main(){
                 break;
             }
             case 5:{
+                int datoEliminar;
+                cout<<"Ingrese dato que desea eliminar\n";
+                cin>>datoEliminar;
+                popLista(lista,datoEliminar);
+                break;
+            }
+            case 6:{
                 seguir = false;
                 break;
             }
@@ -79,6 +88,7 @@ void agregarLista(Nodo *&lista, int dato){
     }
     nuevoNodo->siguiente = aux1;
 }
+
 void mostrarLista(Nodo *&lista){
     string concateno;
     if(lista == NULL){
@@ -110,4 +120,26 @@ bool buscarDato(Nodo *&lista, int n){
         lista = lista->siguiente;
     }
     return false;
+}
+
+void popLista(Nodo *&lista, int dato){
+    if(lista != NULL){
+        Nodo *auxBorrar;
+        Nodo *anterior = NULL;
+        auxBorrar = lista;
+        while(auxBorrar != NULL && auxBorrar->dato != dato){
+            anterior = auxBorrar;
+            auxBorrar = auxBorrar->siguiente;
+        }
+        if(auxBorrar == NULL){
+            cout<<"No existe en la lista\n";
+        }
+        if(anterior == NULL){// esto quiere decir que el elemento a eliminar es el primero
+            lista = lista->siguiente;
+            delete auxBorrar;
+        }else{
+            anterior->siguiente = auxBorrar->siguiente;
+            delete auxBorrar;
+        }
+    }
 }

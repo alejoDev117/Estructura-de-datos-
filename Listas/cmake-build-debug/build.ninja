@@ -106,6 +106,39 @@ build menuInteractivo.exe: CXX_EXECUTABLE_LINKER__menuInteractivo_Debug CMakeFil
   TARGET_IMPLIB = libmenuInteractivo.dll.a
   TARGET_PDB = menuInteractivo.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target practica
+
+
+#############################################
+# Order-only phony target for practica
+
+build cmake_object_order_depends_target_practica: phony || CMakeFiles/practica.dir
+
+build CMakeFiles/practica.dir/practica.cpp.obj: CXX_COMPILER__practica_Debug C$:/Users/Alejandro/CLionProjects/Listas/practica.cpp || cmake_object_order_depends_target_practica
+  DEP_FILE = CMakeFiles\practica.dir\practica.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\practica.dir
+  OBJECT_FILE_DIR = CMakeFiles\practica.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target practica
+
+
+#############################################
+# Link the executable practica.exe
+
+build practica.exe: CXX_EXECUTABLE_LINKER__practica_Debug CMakeFiles/practica.dir/practica.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\practica.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = practica.exe
+  TARGET_IMPLIB = libpractica.dll.a
+  TARGET_PDB = practica.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build agregarLista: phony agregarLista.exe
 
 build menuInteractivo: phony menuInteractivo.exe
 
+build practica: phony practica.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build menuInteractivo: phony menuInteractivo.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug
 
-build all: phony agregarLista.exe menuInteractivo.exe
+build all: phony agregarLista.exe menuInteractivo.exe practica.exe
 
 # =============================================================================
 # Built-in targets
