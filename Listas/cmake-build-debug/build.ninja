@@ -106,72 +106,6 @@ build menuInteractivo.exe: CXX_EXECUTABLE_LINKER__menuInteractivo_Debug CMakeFil
   TARGET_IMPLIB = libmenuInteractivo.dll.a
   TARGET_PDB = menuInteractivo.exe.dbg
 
-# =============================================================================
-# Object build statements for EXECUTABLE target practica
-
-
-#############################################
-# Order-only phony target for practica
-
-build cmake_object_order_depends_target_practica: phony || CMakeFiles/practica.dir
-
-build CMakeFiles/practica.dir/practica.cpp.obj: CXX_COMPILER__practica_Debug C$:/Users/Alejandro/CLionProjects/Listas/practica.cpp || cmake_object_order_depends_target_practica
-  DEP_FILE = CMakeFiles\practica.dir\practica.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\practica.dir
-  OBJECT_FILE_DIR = CMakeFiles\practica.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target practica
-
-
-#############################################
-# Link the executable practica.exe
-
-build practica.exe: CXX_EXECUTABLE_LINKER__practica_Debug CMakeFiles/practica.dir/practica.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\practica.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = practica.exe
-  TARGET_IMPLIB = libpractica.dll.a
-  TARGET_PDB = practica.exe.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target practicaFinal
-
-
-#############################################
-# Order-only phony target for practicaFinal
-
-build cmake_object_order_depends_target_practicaFinal: phony || CMakeFiles/practicaFinal.dir
-
-build CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj: CXX_COMPILER__practicaFinal_Debug C$:/Users/Alejandro/CLionProjects/Listas/practicaFinal.cpp || cmake_object_order_depends_target_practicaFinal
-  DEP_FILE = CMakeFiles\practicaFinal.dir\practicaFinal.cpp.obj.d
-  FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\practicaFinal.dir
-  OBJECT_FILE_DIR = CMakeFiles\practicaFinal.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target practicaFinal
-
-
-#############################################
-# Link the executable practicaFinal.exe
-
-build practicaFinal.exe: CXX_EXECUTABLE_LINKER__practicaFinal_Debug CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\practicaFinal.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = practicaFinal.exe
-  TARGET_IMPLIB = libpracticaFinal.dll.a
-  TARGET_PDB = practicaFinal.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -202,10 +136,6 @@ build agregarLista: phony agregarLista.exe
 
 build menuInteractivo: phony menuInteractivo.exe
 
-build practica: phony practica.exe
-
-build practicaFinal: phony practicaFinal.exe
-
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +144,7 @@ build practicaFinal: phony practicaFinal.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug
 
-build all: phony agregarLista.exe menuInteractivo.exe practica.exe practicaFinal.exe
+build all: phony agregarLista.exe menuInteractivo.exe
 
 # =============================================================================
 # Built-in targets

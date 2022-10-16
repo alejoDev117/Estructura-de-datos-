@@ -1,0 +1,21 @@
+# ninja log v5
+8	830	6866126451584085	CMakeFiles/menuInteractivo.dir/menuInteractivo.cpp.obj	f8c31d5f2d676fc1
+1069	1238	6866118912679476	practica.exe	d72bd7b6501fd0d7
+831	998	6866126453189880	menuInteractivo.exe	c56ceecbb31553ce
+10	1068	6866118911041936	CMakeFiles/practica.dir/practica.cpp.obj	b04b4961f2c81dfb
+26	2867	6867095734942492	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+2867	4120	6867095747408018	practicaFinal.exe	cf92b889b765e5f2
+7	1073	6867097424746285	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1074	1243	6867097426410772	practicaFinal.exe	cf92b889b765e5f2
+9	1006	6867098134234957	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1007	1176	6867098135886050	practicaFinal.exe	cf92b889b765e5f2
+11	1106	6867098272960631	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1107	1274	6867098274589915	practicaFinal.exe	cf92b889b765e5f2
+8	1172	6867098432821490	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1173	1342	6867098434436768	practicaFinal.exe	cf92b889b765e5f2
+8	1059	6867098539348097	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1060	1227	6867098540959079	practicaFinal.exe	cf92b889b765e5f2
+7	1027	6867101921480276	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+1028	1202	6867101923126719	practicaFinal.exe	cf92b889b765e5f2
+7	2472	6867155278893052	CMakeFiles/practicaFinal.dir/practicaFinal.cpp.obj	bec7ed6d9d532ad6
+2472	3266	6867155286887418	practicaFinal.exe	cf92b889b765e5f2

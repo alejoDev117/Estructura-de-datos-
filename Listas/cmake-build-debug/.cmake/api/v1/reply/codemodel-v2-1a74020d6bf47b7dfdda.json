@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Listas",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "agregarLista::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-agregarLista-Debug-2c1a30431f8830cc5635.json",
+					"name" : "agregarLista",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "menuInteractivo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-menuInteractivo-Debug-9b4f0ab440943d972f40.json",
+					"name" : "menuInteractivo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica-Debug-2ec27a7395ffb4e9d3bf.json",
+					"name" : "practica",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practicaFinal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practicaFinal-Debug-c09d57eeab2f69298235.json",
+					"name" : "practicaFinal",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug",
+		"source" : "C:/Users/Alejandro/CLionProjects/Listas"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
