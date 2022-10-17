@@ -1,0 +1,22 @@
+Arboles->son estructuras de datos dinamicas y no lineales
+/////////PARTES DE UN ARBOL//////////////////////////////////////////
+El nodo raiz->Es el primer nodo de la estructura algo asi como el super padre de todos
+nodos hijos-> son los que se heredan del padre(el numero de hijos que puede tener un padre
+depende del tipo de arbol)
+ramas->son los punteros que conectan los nodos
+Los nodos hojas-> son nodos los cuales ya no pueden tener hijos
+nodos hermanos->deben estar al mismo nivel y tener en comun el mismo padre
+
+////////////////PROPIEDADES DE LOS ARBOLES/////////////////////
+Longitud de camino->es el numero de ramas que hay para llegar de un nodo a otro(usualmente desde la raiz)
+   otra forma de contar es la cantidad de nodos -1
+
+Altura de un nodo-> se cuenta desde las hojas hasta arriba
+
+Profundidad de un nodo-> se cuenta desde la raiz hacia abajo
+   los arboles se clasifican en niveles
+   la raiz nivel 0, y sucesivamente las siguientes
+///////////ORDEN DE UN ARBOL////////////////
+Es la maxima cantidad de hijos que puede tener un nodo
+  por ejemplo:
+  orden 2->puede tener ya sea 0 , 1 o maximo 2 hijos -> estos se les conoce como arboles binarios

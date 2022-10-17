@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "practicaFinal.exe"
+			"path" : "restaurante.exe"
 		},
 		{
-			"path" : "practicaFinal.pdb"
+			"path" : "restaurante.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "practicaFinal::@6890427a1f51a3e7e1df",
+	"id" : "restaurante::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "practicaFinal",
-	"nameOnDisk" : "practicaFinal.exe",
+	"name" : "restaurante",
+	"nameOnDisk" : "restaurante.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "practicaFinal.cpp",
+			"path" : "restaurante.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

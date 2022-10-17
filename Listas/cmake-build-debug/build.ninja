@@ -139,6 +139,39 @@ build practica.exe: CXX_EXECUTABLE_LINKER__practica_Debug CMakeFiles/practica.di
   TARGET_IMPLIB = libpractica.dll.a
   TARGET_PDB = practica.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target restaurante
+
+
+#############################################
+# Order-only phony target for restaurante
+
+build cmake_object_order_depends_target_restaurante: phony || CMakeFiles/restaurante.dir
+
+build CMakeFiles/restaurante.dir/restaurante.cpp.obj: CXX_COMPILER__restaurante_Debug C$:/Users/Alejandro/CLionProjects/Listas/restaurante.cpp || cmake_object_order_depends_target_restaurante
+  DEP_FILE = CMakeFiles\restaurante.dir\restaurante.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\restaurante.dir
+  OBJECT_FILE_DIR = CMakeFiles\restaurante.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target restaurante
+
+
+#############################################
+# Link the executable restaurante.exe
+
+build restaurante.exe: CXX_EXECUTABLE_LINKER__restaurante_Debug CMakeFiles/restaurante.dir/restaurante.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\restaurante.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = restaurante.exe
+  TARGET_IMPLIB = librestaurante.dll.a
+  TARGET_PDB = restaurante.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build menuInteractivo: phony menuInteractivo.exe
 
 build practica: phony practica.exe
 
+build restaurante: phony restaurante.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build practica: phony practica.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug
 
-build all: phony agregarLista.exe menuInteractivo.exe practica.exe
+build all: phony agregarLista.exe menuInteractivo.exe practica.exe restaurante.exe
 
 # =============================================================================
 # Built-in targets
