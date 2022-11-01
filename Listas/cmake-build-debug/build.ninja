@@ -172,6 +172,39 @@ build restaurante.exe: CXX_EXECUTABLE_LINKER__restaurante_Debug CMakeFiles/resta
   TARGET_IMPLIB = librestaurante.dll.a
   TARGET_PDB = restaurante.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Verificacion
+
+
+#############################################
+# Order-only phony target for Verificacion
+
+build cmake_object_order_depends_target_Verificacion: phony || CMakeFiles/Verificacion.dir
+
+build CMakeFiles/Verificacion.dir/Verificacion.cpp.obj: CXX_COMPILER__Verificacion_Debug C$:/Users/Alejandro/CLionProjects/Listas/Verificacion.cpp || cmake_object_order_depends_target_Verificacion
+  DEP_FILE = CMakeFiles\Verificacion.dir\Verificacion.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Verificacion.dir
+  OBJECT_FILE_DIR = CMakeFiles\Verificacion.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Verificacion
+
+
+#############################################
+# Link the executable Verificacion.exe
+
+build Verificacion.exe: CXX_EXECUTABLE_LINKER__Verificacion_Debug CMakeFiles/Verificacion.dir/Verificacion.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Verificacion.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Verificacion.exe
+  TARGET_IMPLIB = libVerificacion.dll.a
+  TARGET_PDB = Verificacion.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -198,6 +231,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build Verificacion: phony Verificacion.exe
+
 build agregarLista: phony agregarLista.exe
 
 build menuInteractivo: phony menuInteractivo.exe
@@ -214,7 +249,7 @@ build restaurante: phony restaurante.exe
 #############################################
 # Folder: C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug
 
-build all: phony agregarLista.exe menuInteractivo.exe practica.exe restaurante.exe
+build all: phony agregarLista.exe menuInteractivo.exe practica.exe restaurante.exe Verificacion.exe
 
 # =============================================================================
 # Built-in targets

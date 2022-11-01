@@ -2,5 +2,6 @@ C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/agregarList
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/menuInteractivo.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/practica.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/restaurante.dir
+C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/Verificacion.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Alejandro/CLionProjects/Listas/cmake-build-debug/CMakeFiles/rebuild_cache.dir

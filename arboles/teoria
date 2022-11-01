@@ -20,3 +20,9 @@ Profundidad de un nodo-> se cuenta desde la raiz hacia abajo
 Es la maxima cantidad de hijos que puede tener un nodo
   por ejemplo:
   orden 2->puede tener ya sea 0 , 1 o maximo 2 hijos -> estos se les conoce como arboles binarios
+
+
+/////////////////////////////////////
+ARBOLES BINARIOS DE BUSQUEDA->
+son los cuales todos sus nondos hijos que van a la izquierda tendran siempre los menores valores
+a partir de la raiz los menores a la izquierda y mayores a la derecha

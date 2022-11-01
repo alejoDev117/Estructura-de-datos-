@@ -1,8 +1,6 @@
 # include <iostream>
 # include <conio.h>
 
-
-
 using namespace std;
 
 struct NodoLista{
@@ -16,34 +14,43 @@ struct NodoCola{
 	NodoLista *listaPedidos;
 	NodoCola *siguiente;
 };
+struct nodoPila{
+  string dato;
+  nodoPila *siguiente;
+};
 
 void insertarCola(NodoCola *&,NodoCola*&,NodoLista*,int);
 bool cola_vacia(NodoCola *);
-void eliminarCola(NodoCola *&,NodoCola *&,NodoLista*&);
+void eliminarCola(NodoCola *&,NodoCola *&,NodoLista*&,int & );
 NodoCola* buscarCliente(NodoCola *&,int);
 void insertarLista(NodoLista*&,string,int);
-void eliminarLista(NodoLista*&,string&);
 void mostrarLista(NodoLista *&);
 void mostrarCola(NodoCola *&);
 void menu();
+void impresionEmpresa();
+void agregarPila (nodoPila *&pila, string);
+void mostrarPila(nodoPila *&pila);
 
 int main (){
 	menu();
 	getch();
 	return 0;
 }
+
 void menu(){
 	NodoCola *frenteCola = NULL;
 	NodoCola *finCola = NULL;
     NodoLista *lista = NULL;
+    nodoPila *pila = NULL;
 	int dato,op=0,turno=1;
 	do{cout<<"\t ------RESTAURANTE_EL_FOGON-----"<<endl<<endl;
 	cout<<" Ingrese el numero segun la opcion : "<<endl;
 	cout<<" (1). Ingreso para turnos."<<endl;
 	cout<<" (2). Atender cliente de cola."<<endl;
-	cout<<" (3). Generar Factura. "<<endl;
-	cout<<" (4). Mostrar todas las facturas"<<endl;
-    cout<<" (5). Salir"<<endl;
+	cout<<" (3). Generar Factura."<<endl;
+	cout<<" (4). Generar Factura de todos los turnos."<<endl;
+	cout<<" (5). Mostrar Pedidos Generados."<<endl;
+    cout<<" (6). Salir"<<endl;
 	cin>>op;
 	switch (op) {
         case 1 : {
@@ -55,6 +62,7 @@ void menu(){
                 cout << "Ingrese su valor\n";
                 cin >> valor;
                 insertarLista(lista, pedido, valor);
+                agregarPila (pila,pedido);
                 cout << "Desea ingresar otro pedido?(Si,No)\n";
                 cin >> pedir;
             } while (pedir == "si" || pedir == "Si");
@@ -66,7 +74,7 @@ void menu(){
         }
         case 2: {
             cout << "Se atiende a cliente con turno: " << frenteCola->turno << endl;
-            eliminarCola(frenteCola, finCola, frenteCola->listaPedidos);
+            eliminarCola(frenteCola, finCola, frenteCola->listaPedidos,turno);
             break;
     }
     case 3:{
@@ -77,6 +85,7 @@ void menu(){
         cin>>turnoFacturacion;
         clienteAFacturar = buscarCliente(busqueda,turnoFacturacion);
         mostrarLista(clienteAFacturar->listaPedidos);
+        
         break;
     }
     case 4:{
@@ -84,10 +93,17 @@ void menu(){
         mostrarCola(auxMostrar);
         break;
     }
+    case 5:{
+    	nodoPila *auxMostrar= pila;
+    	mostrarPila (auxMostrar);
+		break;
+	}
+
 		}
-	}while (op!=5);
+	}while (op!=6);
 
 }
+
 void insertarCola(NodoCola *& frenteCola, NodoCola *& finCola , NodoLista *listaPedidosCliente,int turno){
 	NodoCola *nuevo_nodo = new NodoCola();
 	nuevo_nodo->listaPedidos  = listaPedidosCliente;
@@ -100,15 +116,16 @@ void insertarCola(NodoCola *& frenteCola, NodoCola *& finCola , NodoLista *lista
 	}
 	finCola = nuevo_nodo;
 }
-void eliminarCola(NodoCola *& frenteCola, NodoCola *& finCola, NodoLista *&listaPedidoCliente){
-    eliminarLista(listaPedidoCliente,listaPedidoCliente->pedido);
+
+void eliminarCola(NodoCola *& frenteCola, NodoCola *& finCola, NodoLista *&listaPedidoCliente,int & turno){
+    turno= frenteCola -> turno;
 	NodoCola *aux=frenteCola;
 	if(frenteCola == finCola){
 		frenteCola=NULL;
 		finCola=NULL;	
 	}
 	else{
-        frenteCola = frenteCola-> siguiente;
+        frenteCola = frenteCola->siguiente;
 	}
 	delete aux;
 }
@@ -134,19 +151,10 @@ void insertarLista(NodoLista *&lista, string pedido,int valor){
     }
     if(lista == aux1){
         lista = nuevoNodo;
-    } else{
+    }else{
         aux2->siguiente = nuevoNodo;
     }
     nuevoNodo->siguiente = aux1;
-}
-
-void eliminarLista(NodoLista*&lista,string &pedido){
-    while(lista != NULL) {
-        NodoLista *aux = lista;
-        pedido = aux->pedido;
-        lista = aux->siguiente;
-        delete aux;
-    }
 }
 
 NodoCola* buscarCliente(NodoCola *&colaEspera, int turno){
@@ -158,6 +166,7 @@ NodoCola* buscarCliente(NodoCola *&colaEspera, int turno){
     }
     return NULL;
 }
+
 void mostrarCola(NodoCola *&ColaClientes){
     while(ColaClientes != NULL){
         cout<<"Turno:"<<ColaClientes->turno<<endl;
@@ -169,12 +178,33 @@ void mostrarCola(NodoCola *&ColaClientes){
 void mostrarLista(NodoLista *&listaPedidos){
     NodoLista *auxMostrarLista = listaPedidos;
     int totalPago = 0;
-    cout<<"$$Factura$$\n";
+    impresionEmpresa();
+    cout<<"\t$$Factura$$\n";
     while(auxMostrarLista != NULL){
-    cout<<auxMostrarLista->pedido<<"..."<<auxMostrarLista->valorPedido<<"$"<<endl;
+    cout<<"\t"<<auxMostrarLista->pedido<<"..."<<auxMostrarLista->valorPedido<<"$"<<endl;
     totalPago += auxMostrarLista->valorPedido;
     auxMostrarLista = auxMostrarLista->siguiente;
     }
-    cout<<"---------------\n"<<"Total a pagar: "<<totalPago<<"$"<<endl;
+    cout<<"\t-----------------------------------\n"<<"\t Total a pagar: "<<totalPago<<"$"<<endl;
     cout<<"\n";
+}
+void impresionEmpresa(){
+	cout<<"\t ------RESTAURANTE_EL_FOGON-----"<<endl<<endl;
+	cout<<"\t  Nit:  890984746-7"<<endl;
+	cout<<"\t  Direccion: Cra 46 #40B-50."<<endl;
+	cout<<"\t  PBX:_________________."<<endl;
+	cout<<"\t-----------------------------------"<<endl;
+}
+void agregarPila(nodoPila *&pila,string pedido){
+  nodoPila *nuevo_nodo = new nodoPila();
+  nuevo_nodo -> dato = pedido;
+  nuevo_nodo -> siguiente=pila;
+  pila= nuevo_nodo ;
+  cout<<" Su Pedido "<<pedido<<" agregado. "<<endl;
+}
+void mostrarPila(nodoPila *&pila){
+	while(pila!=NULL){		
+		cout<<"elemento "<<pila->dato<<" eliminado "<<endl;
+		pila = pila -> siguiente;
+	}
 }
