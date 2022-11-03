@@ -1,3 +1,0 @@
-C:/Users/Alejandro/CLionProjects/arboles/cmake-build-debug/CMakeFiles/arbolesBinarios.dir
-C:/Users/Alejandro/CLionProjects/arboles/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Alejandro/CLionProjects/arboles/cmake-build-debug/CMakeFiles/rebuild_cache.dir
