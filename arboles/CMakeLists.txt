@@ -3,4 +3,6 @@ project(arboles)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(arbolesBinarios arbolesBinarios.cpp)
+add_executable(arbol  menuInteractivoABB.cpp)
+add_executable(menuInteractivoABB menuInteractivoABB.cpp)
+
